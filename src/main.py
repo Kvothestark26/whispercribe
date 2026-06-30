@@ -1,9 +1,8 @@
 from transcriber import Transcriber
-
+from config import MODEL_SIZE
 
 def main():
-    MODEL = "small"
-    transcriber = Transcriber(MODEL)
+    transcriber = Transcriber(MODEL_SIZE)
 
     text = transcriber.transcribe("audio/audioprueba.mp3")
 
